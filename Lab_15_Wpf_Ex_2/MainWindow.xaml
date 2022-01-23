@@ -1,0 +1,211 @@
+﻿<Window x:Class="Lab_15_Wpf_Ex_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_15_Wpf_Ex_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer" Margin="0,0,0,-49" Grid.RowSpan="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/logo.png"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Span Background="Yellow">
+                        <Bold>Погода в Москве. Температура воздуха и осадки
+                        <Hyperlink NavigateUri="http://www.pogodaiklimat.ru">за январь 2020 года</Hyperlink></Bold>
+                    </Span>
+                </Paragraph>
+                <Paragraph>
+                    В таблице представлены основные характеристики погоды в Москве - температура воздуха и количество осадков, приведенные за каждые сутки января 2020 года.
+Норма среднемесячной температуры января: -6.5°. Фактическая температура месяца по данным наблюдений: 0.1°. Отклонение от нормы: +6.6° (РЕКОРД!).
+Норма суммы осадков в январе: 52 мм. Выпало осадков: 54 мм. Эта сумма составляет 103% от нормы.
+. 
+                </Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Самая низкая температура воздуха (-6.8°) была 24 января
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Самая высокая температура воздуха (4.5°) была 17 января.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Section FontSize="14" TextAlignment="Center">
+                    <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.2*"/>
+                        <TableColumn Width="*"/>
+                        <TableColumn Width="*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns >
+                        <TableRowGroup >
+                            <TableRow >
+                                <TableCell Background="LightGray" RowSpan="2" >
+                                <Paragraph >
+                                    Дата
+                                </Paragraph>
+                            </TableCell>
+                                <TableCell  Background="LightGray" ColumnSpan="3">
+                                    <Paragraph>
+                                        Температура воздуха, °С
+                                    </Paragraph>
+                                </TableCell >
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                <Paragraph Foreground="Blue">
+                                    Минимум
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Foreground="Green">
+                                    Средняя
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Foreground="Red">
+                                    Максимум
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                     1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightBlue">
+                                    -3.7
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightGreen">
+                                    -0.6
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    2.1
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightBlue">
+                                    -1.9
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightGreen">
+                                    0.1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightCoral">
+                                    1.7
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell TextAlignment="Center">
+                                <Paragraph>
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightBlue">
+                                    -0.5
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightGreen">
+                                    1.2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                    <Paragraph Background="LightCoral">
+                                    2.0
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                            <TableRow>
+                                <TableCell TextAlignment="Center">
+                                    <Paragraph>
+                                        4
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightBlue">
+                                        -1.3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightGreen">
+                                        -0.8
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightCoral">
+                                        -0.3
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell TextAlignment="Center">
+                                    <Paragraph>
+                                        5
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightBlue">
+                                        -1.6
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightGreen">
+                                        0.4
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Background="LightCoral">
+                                        1.3
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                </Table>
+                </Section>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Нажми, если нравится" HorizontalAlignment="Center"/>
+                        <Button Content="Нравится" Width="100"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>
